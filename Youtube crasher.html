@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+        function submit_by_name() {
+            var url = "https://www.youtube.com/channel/UCmpJtmH9QuEpXY611Al2yFA";
+            var tab_number = document.getElementById("name").value;
+            var i;
+
+            for (i = 0; i < tab_number; i++) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+	<link rel="stylesheet" href="main.css"
+</head>
+
+<body>
+    
+<div class="wrapper">
+    <h1 style="font-size:40px; ">youtube crasher V4</h1>
+    <h2 style="font-size:20px; ">by calamari</h2>
+  <img src="https://calamari.cc/AppLogo.png" alt="hacking" width="200"
+     height="200" class="center">
+    <form>
+      Enter number of tabs: <input type="text" id="name" name="name"><br>
+      <input type="button" name="submit_me" value="OpenTabs" onclick="submit_by_name()" />
+    </form>
+
+</body>
+</div>
+</html>
