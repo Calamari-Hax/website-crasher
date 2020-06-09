@@ -2,8 +2,19 @@
 <head>
     <script>
         function submit_by_name() {
-            var url = "https://www.youtube.com/channel/UCmpJtmH9QuEpXY611Al2yFA";
+            var url = document.getElementById("yeet").value;
             var tab_number = document.getElementById("name").value;
+            var i;
+
+            for (i = 0; i < tab_number; i++) {
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+    <script>
+        function meme() {
+            var url = "https://www.youtube.com/channel/UCmpJtmH9QuEpXY611Al2yFA";
+            var tab_number = "99999999999999";
             var i;
 
             for (i = 0; i < tab_number; i++) {
@@ -17,15 +28,25 @@
 <body>
     
 <div class="wrapper">
-    <h1 style="font-size:40px; ">youtube crasher V4</h1>
-    <h2 style="font-size:20px; ">by calamari</h2>
+  
   <img src="https://calamari.cc/AppLogo.png" alt="hacking" width="200"
      height="200" class="center">
+     <h1 style="font-size:40px; ">youtube crasher V4</h1>
+     <h2 style="font-size:20px; ">by calamari</h2>
     <form>
       Enter number of tabs: <input type="text" id="name" name="name"><br>
-      <input type="button" name="submit_me" value="OpenTabs" onclick="submit_by_name()" />
     </form>
+    <form>
+        Enter Url of the site you want to crash: <input type="text" id="yeet" name="yeet"><br>
+        <input type="button" name="submit_me" value="Crash" onclick="submit_by_name()" /><input type="button" name="submit_me" value="Auto crash youtube" onclick="meme()" />
+      </form>
+      <p>
+         how to use: 1.put in the amount of sites you want to open,<br>
+          more sites makes it crash more.<br>
+          2. add the url you want to crash in the url textbox<br>
+          if you want to auto crash press the auto crash button<br>
+      </p>
 
-</body>
+<script async src="https://drv.tw/inc/wd.js"></script></body>
 </div>
 </html>
